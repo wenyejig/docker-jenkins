@@ -1,0 +1,12 @@
+
+maven-plugin:2.12.1
+git-plugin:2.4.0
+git:2.4.0
+git-client-plugin:1.19.0
+git-client:1.19.0
+gitlab-plugin:1.1.28
+gitlab:1.1.28
+matrix-project-plugin:1.6
+matrix-project:1.6
+deploy-plugin:1.10
+deploy:1.10
