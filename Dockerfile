@@ -1,6 +1,9 @@
 FROM java:8-jdk
 
 RUN apt-get update && apt-get install -y wget git curl zip && rm -rf /var/lib/apt/lists/*
+RUN curl https://get.docker.io/gpg | apt-key add -
+RUN echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list
+RUN apt-get update -qq && apt-get install -qqy iptables ca-certificates lxc lxc-docker
 
 ENV JENKINS_HOME /var/jenkins_home
 ENV JENKINS_SLAVE_AGENT_PORT 50000
